@@ -19,7 +19,6 @@ import SeminarsList from "../pages/home/SeminarsList";
 import SeminarDetails from "../pages/seminar-details/SeminarDetails";
 import About from "../pages/about/About";
 import NotFound from "../pages/NotFound";
-import AddDialog from "../componenet/AddDialog";
 
 
 // ** App Layout Component (Handles Navigation & UI Structure)
@@ -49,7 +48,6 @@ const AppLayout = () => {
         </Routes>
       </Container>
       <Footer />
-      <AddDialog/>
     </>
   );
 };

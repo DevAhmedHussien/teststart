@@ -12,9 +12,7 @@ import { Dialog, DialogTitle, DialogContent, DialogActions, TextField, Button, G
 import { LocalizationProvider, DatePicker, TimePicker } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { format } from "date-fns";
-
-// ** context 
-import { useSnackbar } from "../context/SnackBarContext";
+import { useSnackbar } from "../context/SnackbarContext";
 
 const AddDialog = ({ open, setOpen }) => {
 

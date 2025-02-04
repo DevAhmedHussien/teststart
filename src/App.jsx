@@ -9,7 +9,7 @@ import store from "./redux/store";
 import { Provider } from "react-redux";
 
 // ** Context
-import { SnackbarProvider } from "./context/SnackBarContext";
+import { SnackbarProvider } from "./context/SnackbarContext";
 
 // ** Root AppLayout 
 import AppLayout from "./pages/AppLayout";
