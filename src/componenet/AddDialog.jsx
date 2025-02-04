@@ -71,7 +71,7 @@ const AddDialog = ({ open, setOpen }) => {
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <Dialog open={open} onClose={() => setOpen(false)} maxWidth="md" fullWidth>
         <DialogTitle>Add New Seminar</DialogTitle>
-        <DialogContent  sx={{ mt: 1}}>
+        <DialogContent  sx={{pt : '0 !important',mt: 3 , overflow: 'unset'}}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <TextField

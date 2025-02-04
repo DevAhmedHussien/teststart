@@ -4,9 +4,9 @@ import SearchIcon from "@mui/icons-material/Search";
 import CodeIcon from "@mui/icons-material/Code";
 import SecurityIcon from "@mui/icons-material/Security";
 import FolderOpenIcon from "@mui/icons-material/FolderOpen";
-import LanguageIcon from "@mui/icons-material/Language";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+// ... остальные импорты остаются без изменений ...
 
 const About = () => {
   const navigate = useNavigate();
@@ -15,115 +15,121 @@ const About = () => {
     <Box sx={{ mt: 5, p: 4 }}>
       <Box sx={{ textAlign: "center" }}>
         <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2 }}>
-          📌 About the Test Project
+          О Проекте: Система Управления Семинарами
         </Typography>
 
-        {/* 🔥 Competition Overview */}
+        {/* Общее описание */}
         <Paper sx={{ p: 3, mb: 3 }}>
           <Typography variant="body1">
-            This test project was completed as part of a **competition**.
-            The goal was to build an **efficient and optimized React application**
-            with features like **search, CRUD operations, and Redux state management**.
+            Проект разработан как демонстрация современных подходов к созданию веб-приложений.
+            Основные характеристики:
           </Typography>
+          <ul>
+            <li>Полнофункциональное React-приложение с CRUD-операциями</li>
+            <li>Интеграция с Redux для управления состоянием</li>
+            <li>Оптимизированная производительность с использованием React Hooks</li>
+          </ul>
         </Paper>
 
-        {/* 🔍 Amazing Search Feature */}
+        {/* Поисковая система */}
         <Box sx={{ mt: 3, textAlign: "left" }}>
           <Typography variant="h5">
-            <SearchIcon sx={{ mr: 1, verticalAlign: "middle" }} />
-            Advanced Search System
-          </Typography>
-          <Typography>
-            Implemented an **intelligent search system** that:
+            <SearchIcon sx={{ mr: 1 }} />
+            Расширенный Поиск
           </Typography>
           <ul>
-            <li>Searches **by title, description, date, and time**</li>
-            <li>Highlights **matched words in yellow**</li>
-            <li>Works **instantly without reloading**</li>
-            <li>Uses **useMemo and useCallback** for **high performance**</li>
+            <li>Поиск по: заголовку, описанию, дате и времени</li>
+            <li>Динамическая подсветка результатов</li>
+            <li>Оптимизация через useMemo и useCallback</li>
+            <li>Мгновенный поиск без перезагрузки страницы</li>
           </ul>
         </Box>
 
-        {/* 🛠 Technologies Used */}
+        {/* Технологический Стек */}
         <Box sx={{ mt: 3, textAlign: "left" }}>
           <Typography variant="h5">
-            <CodeIcon sx={{ mr: 1, verticalAlign: "middle" }} />
-            Technologies Used
+            <CodeIcon sx={{ mr: 1 }} />
+            Технологический Стек
           </Typography>
           <ul>
-            <li><strong>React, Redux Toolkit, React Hooks</strong> (State management, rendering optimization)</li>
-            <li><strong>Material UI (MUI)</strong> (UI components and styling)</li>
-            <li><strong>DatePicker, Date-fns</strong> (Date and time formatting)</li>
-            <li><strong>React Router</strong> (Navigation between pages)</li>
-            <li><strong>Axios Instance</strong> (Secure and fast HTTP requests)</li>
-            <li><strong>Snackbar</strong> (User notifications for actions)</li>
+            <li><strong>React 18+</strong> - Ядро приложения</li>
+            <li><strong>Redux Toolkit</strong> - Управление состоянием</li>
+            <li><strong>Material UI v5</strong> - UI компоненты</li>
+            <li><strong>Axios</strong> - HTTP-клиент с кастомным инстансом</li>
+            <li><strong>React Router 6</strong> - Навигация</li>
           </ul>
         </Box>
 
-        {/* 🚀 Feature Highlights */}
+        {/* Ключевые Особенности */}
         <Box sx={{ mt: 3, textAlign: "left" }}>
           <Typography variant="h5">
-            <SecurityIcon sx={{ mr: 1, verticalAlign: "middle" }} />
-            Key Features
+            <SecurityIcon sx={{ mr: 1 }} />
+            Основные Преимущества
           </Typography>
           <ul>
-            <li>**🔍 Search with Highlighting** — Matches **are highlighted in yellow** in titles, descriptions, dates, and times.</li>
-            <li>**⚡ Fast CRUD Operations** — Add, Edit, Delete, and Fetch data using **Axios Instance**.</li>
-            <li>**🔄 Real-Time Updates** — Redux updates the state **instantly**.</li>
-            <li>**🛡️ Secure API Requests** — All API requests go through a **centralized Axios Instance**.</li>
+            <li>Режим реального времени для обновлений данных</li>
+            <li>Централизованная обработка ошибок API</li>
+            <li>Feature-Sliced Design архитектура</li>
+            <li>Интеграция с JSON Server для mock API</li>
           </ul>
         </Box>
 
-        {/* 📁 Project Structure */}
+        {/* Архитектура Проекта */}
         <Box sx={{ mt: 3, textAlign: "left" }}>
           <Typography variant="h5">
-            <FolderOpenIcon sx={{ mr: 1, verticalAlign: "middle" }} />
-            Project Architecture (FSD)
+            <FolderOpenIcon sx={{ mr: 1 }} />
+            Архитектура Проекта
           </Typography>
           <ul>
-            <li>**Redux Store** — Centralized state management.</li>
-            <li>**Axios Instance** — For **secure** API requests.</li>
-            <li>**Feature-Sliced Design (FSD)** — UI, API, Utils, State.</li>
-            <li>**Asynchronous Requests** — Managed via `createAsyncThunk` in Redux Toolkit.</li>
+            <li>Redux Store с RTK Query</li>
+            <li>Изолированные модули API</li>
+            <li>Кастомизированные хуки для бизнес-логики</li>
+            <li>Система уведомлений через Snackbar</li>
           </ul>
         </Box>
 
-        {/* 🔗 Links */}
-        <Box sx={{ mt: 3, textAlign: "center" }}>
-          <Button variant="contained" color="primary" href="https://ahmed-portofilo.vercel.app/" target="_blank">
-            <LanguageIcon sx={{ mr: 1 }} />
-            My Portfolio
-          </Button>
-          <Button
-            variant="contained"
-            color="secondary"
-            href="https://github.com/DevAhmedHussien"
-            target="_blank"
-            sx={{ ml: 2 }}
-          >
-            GitHub
-          </Button>
-        </Box>
-
-        {/* 📞 Contact Information */}
+        {/* Контактная Информация */}
         <Box sx={{ mt: 3, textAlign: "left" }}>
           <Typography variant="h5">
-            <ContactMailIcon sx={{ mr: 1, verticalAlign: "middle" }} />
-            Contact Information
+            <ContactMailIcon sx={{ mr: 1 }} />
+            Контакты для Связи
           </Typography>
           <Typography>
             Email: <Link href="mailto:a.abdelmaskoud@mail.ru">a.abdelmaskoud@mail.ru</Link>
           </Typography>
           <Typography>
-            Phone: <Link href="tel:+79821313577">+7 982 131 35 77</Link> (WhatsApp available)
+            Телефон: <Link href="tel:+79821313577">+7 982 131 35 77</Link> (WhatsApp)
+          </Typography>
+          <Typography>
+            Исходный код: <Link href="https://github.com/DevAhmedHussien/teststart">GitHub Repository</Link>
+          </Typography>
+          <Typography>
+            Демо: <Link href="https://teststart-j8v6.vercel.app/">Live Demo</Link>
           </Typography>
         </Box>
 
-        {/* 🔙 Back Button */}
+        {/* Технические Детали */}
+        <Box sx={{ mt: 3, textAlign: "left" }}>
+          <Typography variant="h6">
+            Технические Требования:
+          </Typography>
+          <Typography variant="body2">
+            - Node.js v18+
+            <br/>
+            - Запуск фронтенда: npm run dev
+            <br/>
+            - Запуск сервера: npm run server
+          </Typography>
+        </Box>
+
+        {/* Кнопка возврата */}
         <Box sx={{ mt: 4 }}>
-          <Button variant="outlined" onClick={() => navigate("/")}>
-            <ArrowBackIcon sx={{ mr: 1 }} />
-            Back to Home
+          <Button 
+            variant="contained" 
+            onClick={() => navigate("/")}
+            startIcon={<ArrowBackIcon />}
+          >
+            Вернуться к списку семинаров
           </Button>
         </Box>
       </Box>

@@ -116,7 +116,7 @@ const SeminarsList = () => {
   if (error) return <Alert severity="error">{error}</Alert>;
 
   return (
-    <Grid container spacing={3} sx={{ p: 3, mt: "2rem" }}>
+    <Grid container spacing={3} sx={{ p: 3, mt: "2rem" ,minHeight:'80vh' }}>
       {filteredSeminars.length > 0 ? (
         filteredSeminars.map((seminar) => (
           <Grid item xs={12} sm={6} md={4} key={seminar.id}>
@@ -136,8 +136,8 @@ const SeminarsList = () => {
           </Grid>
         ))
       ) : (
-        <Box sx={{ textAlign: "center", width: "100%", mt: 3 }}>
-          <Typography variant="h5" color="textSecondary" sx={{ m: "10% auto" }}>
+        <Box sx={{ textAlign: "center", width: "100%", mt: 3 ,height:'80vh' }}>
+          <Typography variant="h5" color="textSecondary" sx={{ m: "20% auto" }}>
             No Records Found <br />
             Make sure search query:{" "}
             <span style={{ color: "red" }}> '{searchQuery}' </span> is correct
