@@ -18,7 +18,7 @@ import DeleteDialog from "../../componenet/DeleteDialog";
 import EditDialog from "../../componenet/EditDialog";
 
 // ** context 
-import { useSnackbar } from "../../context/SnackBarContext";
+import { useSnackbar } from "../../context/SnackbarContext";
 
 const SeminarDetails = () => {
     // ** States
