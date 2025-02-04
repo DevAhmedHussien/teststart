@@ -14,11 +14,11 @@ import EditDialog from "../../componenet/EditDialog";
 import AppCard from "../../componenet/AppCard";
 import AddDialog from "../../componenet/AddDialog";
 
-// ** logix
+// ** logic
 import { formatDate, formatTime, safeString } from "../../lib/utils";
 
 // ** context 
-import { useSnackbar } from "../../context/SnackBarContext";
+import { useSnackbar } from "../../context/SnackbarContext";
 
 // ** Icon
 import AddCircleOutline from "@mui/icons-material/AddCircleOutline";
